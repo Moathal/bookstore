@@ -1,6 +1,7 @@
 import { Routes, Route, NavLink } from 'react-router-dom';
 import Books from './components/Books';
 import Categories from './components/Categories';
+import './App.css';
 
 function App() {
   return (

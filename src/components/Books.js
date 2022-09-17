@@ -6,7 +6,7 @@ export default function Books() {
   return (
     <>
       <ul>
-          <Book title="title" author="author" button="Remove" />
+        <Book title="title" author="author" button="Remove" />
       </ul>
       <Form />
     </>
