@@ -1,4 +1,4 @@
-const CHECK_STATUS = 'CHECK_STATUS';
+const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
 
 const initialState = [];
 
@@ -9,7 +9,7 @@ export const addStatus = () => ({
 export const categoriesReducer = (state = initialState, { type }) => {
   switch (type) {
     case CHECK_STATUS:
-      return 'Being created';
+      return [...state, 'Being created'];
     default:
       return state;
   }
