@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore with ReactJS
+# Bookstore ReactJS
 
 > This project lists some books and you can add you favorite to it.
 

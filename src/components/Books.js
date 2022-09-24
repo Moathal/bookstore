@@ -12,7 +12,7 @@ export default function Books() {
   }, []);
   return (
     <>
-      <ul>
+      <ul className="BooksList">
         {books.map((book) => (
           <Book
             key={book.item_id}
