@@ -1,22 +1,28 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/books';
 
 function Form() {
-  const [details, setDetails] = useState({ title: '', author: '' });
+  const [details, setDetails] = useState({
+    title: '',
+    author: '',
+    category: 'Action',
+    item_id: null,
+  });
 
   const dispatch = useDispatch();
 
   const submitHandler = (e) => {
     e.preventDefault();
     if (details.title !== '' && details.author !== '') dispatch(addBook(details));
-    setDetails({ title: '', author: '' });
+    setDetails({ title: '', author: '', category: 'Action' });
   };
 
   const onChange = ((e) => {
     const input = e.target;
-    if (input.name === 'title') setDetails((prev) => ({ ...prev, title: input.value }));
-    if (input.name === 'author') setDetails((prev) => ({ ...prev, author: input.value }));
+    if (input.name === 'title') setDetails((prev) => ({ ...prev, title: input.value, item_id: uuidv4() }));
+    if (input.name === 'author') setDetails((prev) => ({ ...prev, author: input.value, item_id: uuidv4() }));
   });
 
   return (
