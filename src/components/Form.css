@@ -4,9 +4,9 @@
 }
 
 .Lesson-Panel1 {
-  width: 30.5rem;
+  width: 10.5rem !important;
   height: 2.813rem;
-  margin: 1.188rem 2.125rem 0 0;
+  margin: 1.188rem 2.125rem 0 0.5rem;
   padding: 0.813rem 35.688rem 0.813rem 1.063rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
