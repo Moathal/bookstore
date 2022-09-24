@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Calculator with ReactJS
+# Bookstore with ReactJS
 
 > This project lists some books and you can add you favorite to it.
 
@@ -23,7 +23,7 @@ Not yet available.
 
 ### if you want to setup the project
 - clone the project
-- `cd calculator-react`
+- `cd bookstore`
 - `npm i`
 - `npm start`
 
