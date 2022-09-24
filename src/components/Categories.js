@@ -2,6 +2,7 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch, useSelector } from 'react-redux';
 import { addStatus } from '../redux/categories/categories';
+import './categories.css';
 
 export default function Categories() {
   const status = useSelector((state) => state.updateCategories);

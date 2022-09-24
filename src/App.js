@@ -5,25 +5,32 @@ import './App.css';
 
 function App() {
   return (
-    <>
-      <nav>
-        <h1>Book Store</h1>
-        <ul>
+    <div className="Bookstore-CMS">
+      <nav className="panel-bg">
+        <span className="Bookstore-CMS">Bookstore CMS</span>
+        <ul className="panel-bg">
           <li>
-            <NavLink to="/">Books</NavLink>
+            <NavLink className="BOOKS Text-Style-3" to="/">
+              Books
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/categories">Categories</NavLink>
+            <NavLink className="CATEGORIES Text-Style-3" to="/categories">
+              Categories
+            </NavLink>
           </li>
         </ul>
+        <div className="Oval">
+          <div className="Mask" />
+        </div>
       </nav>
-      <div className="App">
+      <div className="Bookstore-CMS">
         <Routes>
           <Route path="/" element={<Books />} />
           <Route path="/categories" element={<Categories />} />
         </Routes>
       </div>
-    </>
+    </div>
   );
 }
 
