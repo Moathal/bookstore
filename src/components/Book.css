@@ -63,6 +63,9 @@
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .Edit {
